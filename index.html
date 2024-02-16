@@ -56,10 +56,10 @@
                 <!-- keyboard -->
                 <div class="">
                     <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
                         <kbd id="w" class="kbd">w</kbd>
                         <kbd id="e" class="kbd">e</kbd>
                         <kbd id="r" class="kbd">r</kbd>
-                        <kbd id="q" class="kbd">q</kbd>
                         <kbd id="t" class="kbd">t</kbd>
                         <kbd id="y" class="kbd">y</kbd>
                         <kbd id="u" class="kbd">u</kbd>
@@ -94,11 +94,11 @@
 
                 <div class="w-4/6 mx-auto flex justify-between">
                     <button class="btn rounded-full bg-purple-500 border-none text-white">
-                        <span>Life</span><img src="./images/heart.png" alt=""><span>1</span>
+                        <span>Life</span><img src="./images/heart.png" alt=""><span id="current-life">5</span>
                     </button>
 
                     <button class="btn rounded-full bg-purple-500 border-none text-white">
-                        <span>Score</span><img src="./images/dollar.png" alt=""><span>1</span>
+                        <span>Score</span><img src="./images/dollar.png" alt=""><span id="current-score">0</span>
                     </button>
                 </div>
 
@@ -106,14 +106,15 @@
         </section>
 
         <!-- score section starts -->
-        <section class="score flex min-h-screen justify-center items-center hidden ">
+        <section id="final-score" class="flex min-h-screen justify-center items-center hidden ">
             <div class="text-white text-center space-y-8 bg-[#ffffff33] p-8 rounded-lg">
+                <p class="text-2xl">Game over !</p>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">score:</span>
-                    <span>14</span>
+                    <span id="final-result">14</span>
                 </h1>
-                <button class="btn border-none">Play Again</button>
-                <p>Practice will make your pro</p>
+                <button onclick="play()" class="btn border-none text-2xl">Play Again</button>
+                <p class="text-2xl">Practice will make your pro</p>
             </div>
 
         </section>
